@@ -159,6 +159,10 @@ typedef NS_ENUM(NSInteger, ScreenState) {
 #pragma mark - Text Field Delegate Methods
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    if (!string.length) {
+        return YES;
+    }
+    
     if (textField.text.length == 3) {
         NSString *textString = [NSString stringWithFormat:@"%@%@", textField.text, string];
         textField.text = textString;
