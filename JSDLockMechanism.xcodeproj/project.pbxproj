@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E42749F91F85742F00F806FE /* JSDCredentialsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E42749F81F85742F00F806FE /* JSDCredentialsModel.m */; };
+		E42749FC1F8578E400F806FE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E42749FB1F8578E400F806FE /* Security.framework */; };
+		E42749FD1F85792500F806FE /* KFKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = E42749F61F8573AB00F806FE /* KFKeychain.m */; };
+		E42749FF1F857F9D00F806FE /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E42749FE1F857F9D00F806FE /* LocalAuthentication.framework */; };
+		E45A661D1F81751800D169A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E45A661C1F81751800D169A1 /* AppDelegate.m */; };
+		E45A66201F81751800D169A1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E45A661F1F81751800D169A1 /* ViewController.m */; };
+		E45A66231F81751800D169A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E45A66211F81751800D169A1 /* Main.storyboard */; };
+		E45A66251F81751800D169A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E45A66241F81751800D169A1 /* Assets.xcassets */; };
+		E45A66281F81751800D169A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E45A66261F81751800D169A1 /* LaunchScreen.storyboard */; };
+		E45A662B1F81751800D169A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E45A662A1F81751800D169A1 /* main.m */; };
+		E45A66341F81781D00D169A1 /* JSDSecuritySettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E45A66331F81781D00D169A1 /* JSDSecuritySettingsViewController.m */; };
+		E45A66371F81858300D169A1 /* PasscodeSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = E45A66361F81858300D169A1 /* PasscodeSettingController.m */; };
+		E4E93BD41F86C1E3000F24DC /* JSDLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E93BD31F86C1E3000F24DC /* JSDLockView.m */; };
+		E4E93BD91F86C585000F24DC /* JSDLockViewXib.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4E93BD81F86C585000F24DC /* JSDLockViewXib.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E42749F51F8573AB00F806FE /* KFKeychain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFKeychain.h; sourceTree = "<group>"; };
+		E42749F61F8573AB00F806FE /* KFKeychain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFKeychain.m; sourceTree = "<group>"; };
+		E42749F71F85742F00F806FE /* JSDCredentialsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSDCredentialsModel.h; sourceTree = "<group>"; };
+		E42749F81F85742F00F806FE /* JSDCredentialsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSDCredentialsModel.m; sourceTree = "<group>"; };
+		E42749FB1F8578E400F806FE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		E42749FE1F857F9D00F806FE /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		E45A66181F81751800D169A1 /* JSDLockMechanism.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSDLockMechanism.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E45A661B1F81751800D169A1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E45A661C1F81751800D169A1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E45A661E1F81751800D169A1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E45A661F1F81751800D169A1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E45A66221F81751800D169A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E45A66241F81751800D169A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E45A66271F81751800D169A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E45A66291F81751800D169A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E45A662A1F81751800D169A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E45A66321F81781D00D169A1 /* JSDSecuritySettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSDSecuritySettingsViewController.h; sourceTree = "<group>"; };
+		E45A66331F81781D00D169A1 /* JSDSecuritySettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSDSecuritySettingsViewController.m; sourceTree = "<group>"; };
+		E45A66351F81858300D169A1 /* PasscodeSettingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PasscodeSettingController.h; sourceTree = "<group>"; };
+		E45A66361F81858300D169A1 /* PasscodeSettingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PasscodeSettingController.m; sourceTree = "<group>"; };
+		E4E93BD21F86C1E3000F24DC /* JSDLockView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSDLockView.h; sourceTree = "<group>"; };
+		E4E93BD31F86C1E3000F24DC /* JSDLockView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSDLockView.m; sourceTree = "<group>"; };
+		E4E93BD81F86C585000F24DC /* JSDLockViewXib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JSDLockViewXib.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E45A66151F81751800D169A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E42749FF1F857F9D00F806FE /* LocalAuthentication.framework in Frameworks */,
+				E42749FC1F8578E400F806FE /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E42749F41F85739C00F806FE /* KeyChainWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				E42749F51F8573AB00F806FE /* KFKeychain.h */,
+				E42749F61F8573AB00F806FE /* KFKeychain.m */,
+				E42749F71F85742F00F806FE /* JSDCredentialsModel.h */,
+				E42749F81F85742F00F806FE /* JSDCredentialsModel.m */,
+			);
+			path = KeyChainWrapper;
+			sourceTree = "<group>";
+		};
+		E42749FA1F8578E400F806FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E42749FE1F857F9D00F806FE /* LocalAuthentication.framework */,
+				E42749FB1F8578E400F806FE /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E45A660F1F81751800D169A1 = {
+			isa = PBXGroup;
+			children = (
+				E45A661A1F81751800D169A1 /* JSDLockMechanism */,
+				E45A66191F81751800D169A1 /* Products */,
+				E42749FA1F8578E400F806FE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E45A66191F81751800D169A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E45A66181F81751800D169A1 /* JSDLockMechanism.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E45A661A1F81751800D169A1 /* JSDLockMechanism */ = {
+			isa = PBXGroup;
+			children = (
+				E4E93BD11F86C1CD000F24DC /* Lock View */,
+				E42749F41F85739C00F806FE /* KeyChainWrapper */,
+				E45A66311F8177E100D169A1 /* Settings */,
+				E45A661B1F81751800D169A1 /* AppDelegate.h */,
+				E45A661C1F81751800D169A1 /* AppDelegate.m */,
+				E45A661E1F81751800D169A1 /* ViewController.h */,
+				E45A661F1F81751800D169A1 /* ViewController.m */,
+				E45A66211F81751800D169A1 /* Main.storyboard */,
+				E45A66241F81751800D169A1 /* Assets.xcassets */,
+				E45A66261F81751800D169A1 /* LaunchScreen.storyboard */,
+				E45A66291F81751800D169A1 /* Info.plist */,
+				E45A662A1F81751800D169A1 /* main.m */,
+			);
+			path = JSDLockMechanism;
+			sourceTree = "<group>";
+		};
+		E45A66311F8177E100D169A1 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				E45A66321F81781D00D169A1 /* JSDSecuritySettingsViewController.h */,
+				E45A66331F81781D00D169A1 /* JSDSecuritySettingsViewController.m */,
+				E45A66351F81858300D169A1 /* PasscodeSettingController.h */,
+				E45A66361F81858300D169A1 /* PasscodeSettingController.m */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		E4E93BD11F86C1CD000F24DC /* Lock View */ = {
+			isa = PBXGroup;
+			children = (
+				E4E93BD21F86C1E3000F24DC /* JSDLockView.h */,
+				E4E93BD31F86C1E3000F24DC /* JSDLockView.m */,
+				E4E93BD81F86C585000F24DC /* JSDLockViewXib.xib */,
+			);
+			path = "Lock View";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E45A66171F81751800D169A1 /* JSDLockMechanism */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E45A662E1F81751800D169A1 /* Build configuration list for PBXNativeTarget "JSDLockMechanism" */;
+			buildPhases = (
+				E45A66141F81751800D169A1 /* Sources */,
+				E45A66151F81751800D169A1 /* Frameworks */,
+				E45A66161F81751800D169A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JSDLockMechanism;
+			productName = JSDLockMechanism;
+			productReference = E45A66181F81751800D169A1 /* JSDLockMechanism.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E45A66101F81751800D169A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Junction Seven";
+				TargetAttributes = {
+					E45A66171F81751800D169A1 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E45A66131F81751800D169A1 /* Build configuration list for PBXProject "JSDLockMechanism" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E45A660F1F81751800D169A1;
+			productRefGroup = E45A66191F81751800D169A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E45A66171F81751800D169A1 /* JSDLockMechanism */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E45A66161F81751800D169A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E45A66281F81751800D169A1 /* LaunchScreen.storyboard in Resources */,
+				E45A66251F81751800D169A1 /* Assets.xcassets in Resources */,
+				E45A66231F81751800D169A1 /* Main.storyboard in Resources */,
+				E4E93BD91F86C585000F24DC /* JSDLockViewXib.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E45A66141F81751800D169A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E45A66371F81858300D169A1 /* PasscodeSettingController.m in Sources */,
+				E42749FD1F85792500F806FE /* KFKeychain.m in Sources */,
+				E45A66201F81751800D169A1 /* ViewController.m in Sources */,
+				E42749F91F85742F00F806FE /* JSDCredentialsModel.m in Sources */,
+				E45A662B1F81751800D169A1 /* main.m in Sources */,
+				E4E93BD41F86C1E3000F24DC /* JSDLockView.m in Sources */,
+				E45A661D1F81751800D169A1 /* AppDelegate.m in Sources */,
+				E45A66341F81781D00D169A1 /* JSDSecuritySettingsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E45A66211F81751800D169A1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E45A66221F81751800D169A1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E45A66261F81751800D169A1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E45A66271F81751800D169A1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E45A662C1F81751800D169A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E45A662D1F81751800D169A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E45A662F1F81751800D169A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6ZBXMFUFJ7;
+				INFOPLIST_FILE = JSDLockMechanism/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.junctionseven.JSDLockMechanism;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E45A66301F81751800D169A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6ZBXMFUFJ7;
+				INFOPLIST_FILE = JSDLockMechanism/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.junctionseven.JSDLockMechanism;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E45A66131F81751800D169A1 /* Build configuration list for PBXProject "JSDLockMechanism" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E45A662C1F81751800D169A1 /* Debug */,
+				E45A662D1F81751800D169A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E45A662E1F81751800D169A1 /* Build configuration list for PBXNativeTarget "JSDLockMechanism" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E45A662F1F81751800D169A1 /* Debug */,
+				E45A66301F81751800D169A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E45A66101F81751800D169A1 /* Project object */;
+}
