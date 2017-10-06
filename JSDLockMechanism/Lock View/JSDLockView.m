@@ -22,7 +22,7 @@
 
 @implementation JSDLockView
 
-static NSInteger timeOutPeriod = 15;
+static NSInteger timeOutPeriod = 60;
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
