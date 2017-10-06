@@ -22,6 +22,8 @@
 
 @implementation JSDLockView
 
+static NSInteger timeOutPeriod = 15;
+
 - (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -64,14 +66,13 @@
     }
     else {
         int secondsSinceLast = -(int)[self.lastCall timeIntervalSinceNow];
-        if (secondsSinceLast > 10) {
+        if (secondsSinceLast > timeOutPeriod) {
             self.lastCall = [NSDate date];
             
             return YES;
         }
-        else {
-            return NO;
-        }
+        
+        return NO;
     }
 }
 
