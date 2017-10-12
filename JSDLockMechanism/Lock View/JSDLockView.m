@@ -42,14 +42,16 @@
             [window addSubview:self];
             
             self.incorrectPasscode.hidden = YES;
-            
-            if (self.credentials.bioMetricIsOn) {
-                [self showBiometrics];
-            }
-            else {
-                [self.passcodeTextField becomeFirstResponder];
-            }
         }
+    }
+}
+
+- (void) returnedToForeground {
+    if (self.credentials.bioMetricIsOn) {
+        [self showBiometrics];
+    }
+    else {
+        [self.passcodeTextField becomeFirstResponder];
     }
 }
 

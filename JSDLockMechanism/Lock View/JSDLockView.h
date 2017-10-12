@@ -10,6 +10,13 @@
 
 @interface JSDLockView : UIView
 
+
+/**
+ Adds the lock screen as the app goes into the background
+ */
 - (void) addLockScreenIfNeeded;
+
+// Shows touch ID or the keyboard when the app returns to the foreground
+- (void) returnedToForeground
 
 @end

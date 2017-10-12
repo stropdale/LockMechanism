@@ -23,6 +23,30 @@
      [self addInLockView];
 }
 
+- (void)applicationWillResignActive:(UIApplication *)application {
+    [self addInLockView];
+}
+
+- (void)applicationDidEnterBackground:(UIApplication *)application {
+    [self addInLockView];
+}
+
+- (void) applicationWillEnterForeground:(UIApplication *)application {
+    [self lockViewInForeground];
+}
+
+- (void)applicationWillTerminate:(UIApplication *)application {
+    [self addInLockView];
+}
+
+
+
+#pragma mark - Lock View
+
+- (void) lockViewInForeground {
+    [self.lockView returnedToForeground];
+}
+
 - (void) addInLockView {
     [self.lockView addLockScreenIfNeeded];
 }
