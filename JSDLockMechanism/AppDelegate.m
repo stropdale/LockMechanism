@@ -19,13 +19,7 @@
 
 @implementation AppDelegate
 
-
-- (void)applicationWillEnterForeground:(UIApplication *)application {
-     [self addInLockView];
-}
-
-
-- (void)applicationDidBecomeActive:(UIApplication *)application {
+- (void)applicationDidEnterBackground:(UIApplication *)application {
      [self addInLockView];
 }
 

@@ -27,14 +27,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lock" translatesAutoresizingMaskIntoConstraints="NO" id="OWa-53-e8D">
+                                <rect key="frame" x="152" y="72" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="aIa-zf-xsA"/>
+                                    <constraint firstAttribute="width" constant="70" id="vTe-7E-Fjc"/>
+                                </constraints>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Passcode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iR4-uq-acM">
-                                <rect key="frame" x="120.5" y="150" width="134.5" height="24"/>
+                                <rect key="frame" x="120" y="177" width="134.5" height="24"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ghn-EV-ggU">
-                                <rect key="frame" x="8" y="181.5" width="359" height="50"/>
+                                <rect key="frame" x="8" y="208" width="359" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="AWb-Ay-5p7"/>
                                     <constraint firstAttribute="width" constant="359" id="eDi-yl-9hj"/>
@@ -47,28 +54,21 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Incorrect Passcode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jO7-ay-N1O">
-                                <rect key="frame" x="114" y="239.5" width="147.5" height="20.5"/>
+                                <rect key="frame" x="114" y="266" width="147.5" height="20.5"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOCKED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o68-0v-eY5">
-                                <rect key="frame" x="8" y="94" width="359" height="32"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="o68-0v-eY5" firstAttribute="top" secondItem="gWk-t4-XdD" secondAttribute="top" constant="94" id="0ZN-cJ-bS6"/>
-                            <constraint firstItem="ghn-EV-ggU" firstAttribute="top" secondItem="iR4-uq-acM" secondAttribute="bottom" constant="8" id="2yM-P3-j31"/>
-                            <constraint firstAttribute="trailing" secondItem="o68-0v-eY5" secondAttribute="trailing" constant="8" id="EN9-cW-r6v"/>
+                            <constraint firstItem="ghn-EV-ggU" firstAttribute="top" secondItem="iR4-uq-acM" secondAttribute="bottom" constant="7" id="2yM-P3-j31"/>
+                            <constraint firstItem="OWa-53-e8D" firstAttribute="centerX" secondItem="iR4-uq-acM" secondAttribute="centerX" id="ExT-bG-LEE"/>
                             <constraint firstItem="jO7-ay-N1O" firstAttribute="top" secondItem="ghn-EV-ggU" secondAttribute="bottom" constant="8" id="GWa-G2-TWK"/>
                             <constraint firstItem="ghn-EV-ggU" firstAttribute="leading" secondItem="gWk-t4-XdD" secondAttribute="leading" constant="8" id="aHB-GR-hn3"/>
                             <constraint firstItem="jO7-ay-N1O" firstAttribute="centerX" secondItem="gWk-t4-XdD" secondAttribute="centerX" id="e86-7c-fR8"/>
                             <constraint firstAttribute="trailing" secondItem="ghn-EV-ggU" secondAttribute="trailing" constant="8" id="eQo-c1-MEV"/>
-                            <constraint firstItem="o68-0v-eY5" firstAttribute="leading" secondItem="gWk-t4-XdD" secondAttribute="leading" constant="8" id="kkO-QW-W5N"/>
-                            <constraint firstItem="iR4-uq-acM" firstAttribute="top" secondItem="gWk-t4-XdD" secondAttribute="top" constant="150" id="qLG-Gh-7J6"/>
+                            <constraint firstItem="iR4-uq-acM" firstAttribute="top" secondItem="OWa-53-e8D" secondAttribute="bottom" constant="35" id="ffI-wn-Qgb"/>
+                            <constraint firstItem="iR4-uq-acM" firstAttribute="top" secondItem="gWk-t4-XdD" secondAttribute="top" constant="177" id="qLG-Gh-7J6"/>
                             <constraint firstItem="iR4-uq-acM" firstAttribute="centerX" secondItem="gWk-t4-XdD" secondAttribute="centerX" id="uc6-uI-RR2"/>
                         </constraints>
                     </view>
@@ -86,4 +86,7 @@
             <point key="canvasLocation" x="25.5" y="51.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="Lock" width="20" height="28"/>
+    </resources>
 </document>

@@ -22,8 +22,6 @@
 
 @implementation JSDLockView
 
-static NSInteger timeOutPeriod = 60;
-
 - (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -37,9 +35,6 @@ static NSInteger timeOutPeriod = 60;
 }
 
 - (void) addLockScreenIfNeeded {
-    if (![self minIntervalPassed]) {
-        return;
-    }
     
     if (self.credentials.pinNumber) {
         if (!self.superview) {
@@ -55,24 +50,6 @@ static NSInteger timeOutPeriod = 60;
                 [self.passcodeTextField becomeFirstResponder];
             }
         }
-    }
-}
-
-- (BOOL) minIntervalPassed {
-    if (!self.lastCall) {
-        self.lastCall = [NSDate date];
-        
-        return YES;
-    }
-    else {
-        int secondsSinceLast = -(int)[self.lastCall timeIntervalSinceNow];
-        if (secondsSinceLast > timeOutPeriod) {
-            self.lastCall = [NSDate date];
-            
-            return YES;
-        }
-        
-        return NO;
     }
 }
 
